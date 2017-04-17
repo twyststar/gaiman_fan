@@ -1,0 +1,23 @@
+.head {
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  margin-top: 0;
+  padding: 0;
+}
+.head h1, .head h4 {
+  color: white;
+}
+#left {
+  min-height: 700px;
+  text-align: center;
+  background-image: url(/img/secret.png);
+  background-size: cover;
+}
+#right {
+  background-color: blue;
+  min-height: 700px;
+  text-align: center;
+  background-image: url(/img/rightside.jpeg);
+  background-size: cover;
+}

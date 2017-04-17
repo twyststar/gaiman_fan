@@ -1,0 +1,50 @@
+<div class='navbar'>
+  <ul class='nav nav-tabs'>
+    <li><a href='/'>Home</a></li>
+    <li><a href='/books'>Novels</a></li>
+    <li><a href='/graphic'>Graphic</a></li>
+    <li><a href='/bio'>Bio</a></li>
+    <li class='active'><a href=''>Current</a></li>
+  </ul>
+</div>
+<div class='head'>
+  <h1>Now and Soon</h1>
+  <h4>Where Neil will be appearing soon, and what he's up to now.</h4>
+</div>
+
+<div class='container'
+  <div class='row '>
+
+    <div class='col-sm-3' id='nowleft'>
+    </div>
+
+    <div class='col-sm-6' id='nowmain'>
+      <p>Here is a list of upcoming events Niel will be attending</p>
+        <ul class="list-unstyled">
+          <li><%= @event_one %></li>
+          <li><%= @event_two %></li>
+          <li><%= @event_three %></li>
+        </ul>
+      <p>Here is a link to his full itinerary.</p>
+      <a target='blank' href="http://www.neilgaiman.com/where/">neilgaiman.com/where</a>
+      <p><%= @current_project %></p>
+      <h3>Fill out the form below to receive our newsletter!</h3>
+<form action='/receipt'>
+  <div class="form-group">
+    <label for="full_name">Your name</label>
+    <input id="full_name" name="full_name" class="form-control" type="text">
+  </div>
+  <div class="form-group">
+    <label for="email">Your friend's name</label>
+    <input id="email" name="email" class="form-control" type="text">
+  </div>
+  <button type="submit" class="btn">Go!</button>
+</form>
+      <p>Sources</p>
+    </div>
+
+    <div class='col-sm-3' id='nowright'>
+    </div>
+
+  </div>
+</div>
